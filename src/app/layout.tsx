@@ -1,5 +1,6 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import "./globals.css";
 
 export const metadata = {
   title: 'Kadi Kerner protfolio',
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header/>
+        <Header children={children}/>
         {children}
         <Footer />
       </body>
